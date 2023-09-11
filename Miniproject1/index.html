@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking website</title>
+    <style>
+        table,th,td,tr{
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <header>
+        <h1>Flight Booking Website</h1>
+        <ul >
+            <li type="none"><a href="#Home">Home</a></li>
+            <li type="none"><a href="#Flight">Flight</a></li>
+            <li type="none"><a href="#About">About Us</a></li>
+            <li type="none"><a href="#contact">Contact Us</a></li>
+            <li type="none"><a href="#FAQ">FAQ</a></li>
+        </ul>
+    </header>
+    <section id="Home">
+        <h2>Home</h2>
+        <h3> Welcome to flight booking website</h3>
+        <p>This website allows you to search for flights to any destination and track prices to find and book your next flight.
+            You can also explore destinations using the “Explore” feature</p>
+    </section>
+    <section id="review">
+        <h2>Customer Review</h2>
+        <p><b>&starf;&starf;&starf;&starf;&starf;P.Akash:</b><br>I had a very good experience with flight booking website. The customer service is really good. The customer 
+            service representative Herman really did a great job by explaining everything and helped me a lot in chosing the best deal. They really care about their customers</p>
+
+        <p><b>&starf;&starf;&starf;&starf;&starf;Mohd Mustafa:</b><br>We booked a trip to Australia through these guys and saved several thousand dollars. We read the reviews
+             and knew going into it that if we needed to change our flight schedule it could be difficult. Thankfully we didn't have to do it and all of our flights came 
+             through just fine. Thanks
+        </p>
+    </section>
+    <section>
+        <H2>please add your review</H2>
+    <form action="review">
+        <fieldset>
+            <legend>your Review</legend>
+            <label for="uname">User Name</label>
+            <input type="text" id="uname" placeholder="enter your name"><br>
+            <label for="rating">Rating</label><br>
+            &#x2B50
+            &#x2B50
+            &#x2B50
+            &#x2B50
+            &#x2B50
+            <br>
+            <input type="checkbox" name="rating" id="rating">
+            <input type="checkbox" name="rating" id="rating">
+            <input type="checkbox" name="rating" id="rating">
+            <input type="checkbox" name="rating" id="rating">
+            <input type="checkbox" name="rating" id="rating">
+            <br>
+            <label for="fno">Flight Number</label>
+            <input type="text" id="fno" placeholder="enter Flight Number">
+            <br>
+            <label for="Fdate">Flight Date</label>
+            <input type="date" id="Fdate" >
+            <br>
+            <label for="Review">Review Text</label>
+            <br>
+            <textarea name="Review" id="review" cols="100" rows="10"></textarea>
+        </fieldset>
+    </form>
+</section>
+    <section id="Flight">
+        <form action="Fligt"></form>
+        <fieldset>
+            <legend>Flight Search</legend>
+            <label for="dep">Departure</label>
+            <select name="dep" id="dep">
+                <option >Select</option>
+                <option value="agra">Agra</option>
+                <option value="hyd">Hyderabad</option>
+                <option value="delhi">delhi</option>
+                <option value="mumbai">mumbai</option>
+                <option value="Kol">Kolkata</option>
+            </select><br>
+            <label for="arr">Arrival</label>
+                <select name="arr" id="arr">
+                    <option >Select</option>
+                    <option value="agra">Agra</option>
+                    <option value="hyd">Hyderabad</option>
+                    <option value="delhi">delhi</option>
+                    <option value="mumbai">mumbai</option>
+                    <option value="Kol">Kolkata</option>
+                </select>
+                <br>
+            <label for="Departuredate">Departure Date</label>
+            <input type="date" id="Departuredate">
+            <br>
+            <label for="arrivaldate">Arrival Date</label>
+            <input type="date" id="arrivaldate">
+            <br>
+            <label for="n">Number of people</label>
+            <input type="number" name="n" id="n" enter number of people>
+            <br>
+            <label for="price">choose Price</label>
+            <input type="range" name="price" id="price">
+            <br>
+            <label for="class">Select class</label>
+            <select name="class" id="class">
+                <option >Select</option>
+                <option value="Bussiness">Business class</option>
+                <option value="Premium">premium economy class</option>
+                <option value="economy">economy class</option>
+                <option value="first">First class</option>
+            </select>
+    </section>
+    <section>
+        <h2>Available Flights</h2>
+        <table>
+            <caption>Flight timmings</caption>
+            <tr>
+                <th>Flight number</th>
+                <th>Departure Time</th>
+                <th>Arrival Time</th>
+            </tr>
+            <tr>
+                <td>T52</td>
+                <td>10:00</td>
+                <td>15:00</td>
+            </tr>
+            <tr>
+                <td>T42</td>
+                <td>11:00</td>
+                <td>15:00</td>
+            </tr>
+            <tr>
+                <td>D11</td>
+                <td>10:30</td>
+                <td>18:00</td>
+            </tr>
+            <tr>
+                <td>A91</td>
+                <td>10:00</td>
+                <td>14:00</td>
+            </tr>
+        </table>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Air India has been in operation for over **90 years** and has a workforce of over **12,000 employees** worldwide. The airline operates **79 destinations** and **59 
+            nonstop international routes** ¹. Air India was founded by JRD Tata, who was also the company's first pilot. The airline has many firsts to its credit, including 
+            launching India's first commercial airline in 1932 and being the world's first airline with a full jet-engine fleet in 1962 ¹. Air India is the flag carrier of India 
+            and has the largest international network and most nonstop routes connecting India with global destinations ¹. In January 2022, Air India was reacquired by Tata Group, 
+            India's largest conglomerate ¹. <br><strong> The airline is committed to operating with net-zero carbon emissions by 2050 ¹</strong></p>
+    </section>
+    <section>
+        <h2>polular destinations</h2>
+        <img src="assets/agra.jpg" alt="agra" width="100%"><br>
+        <h4>Agra</h4>
+        <img src="assets/delhi.jpg" alt="delhi"width="100%"><br>
+        <h4>Delhi</h4>
+        <img src="assets/hyd.jpg" alt="Hyderabad"width="100%"><br>
+        <h4>Hyderabad</h4>
+        <img src="assets/kolkata.jpg" alt="Kolkata "width="100%"><br>
+        <h4>Kolkata</h4>
+        <img src="assets/mumbai.jpg" alt="mumbai"width="100%"><br>
+        <h4>Mumbai</h4>
+    </section>
+    <section id="FAQ">
+        <h2>Frequently Asked Questions</h2>
+        <p> <b>Q. How do I make a flight booking on Flight booking website?</b><br>
+        A: You can book a flight on Flight booking website in five easy steps: Head over to the Flight booking website flight booking page, Enter your departure and arrival destinations, Select your air travel dates, Choose from our wide range of cheap flights based on your airfare preferences, Click on ‘Book Now’ and your air flight booking is done. Alternatively, you can also use the Flight booking website app for your flight ticket booking. Download the Flight booking website app, Put in the details i.e. date of journey, departure and arrival destinations, travel class of your choice, Select on your best comfortable option and click on 'Book Now'.</p>
+        <p>
+         <b>Q - Can I avail domestic flight offers on Flight booking website?</b><br>
+A: Of course, you can. While making domestic flight bookings, you can avail any special offer that is active at that time. In accordance with the offer selected, a listing of eligible cheapest flights would show up on your screen. You can then apply the price filter and click on the downwards arrow, following which budget-friendly flights would start showing up in ascending order from the top (lowest price on top).
+        </p>
+        <p>
+            <b>Q - How can I avail budget air tickets on Flight booking website?</b><br>
+                A: It’s super-easy to avail budget airfare while booking your cheap flight tickets on Flight booking website. Just select the ‘Price’ filter once the available flight options are displayed and adjust according to your convenience. On the Flight booking website, you can select the downward arrow, which will show the lowest airfare at the top and continue downward in ascending order.
+        </p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Call: <a href="Telephone:9696151584">9696151584</a></p>
+        <p>Email: <a href="mailto:flightbookingwebsite@gmail.com">flightbookingwebsite@gmail.com</a></p>
+    </section>
+    <footer>
+        <p>&copy;2023 Flight booking website (India) Private Limited. All rights reserved</p>
+    </footer>
+    </center>
+</body>
+</html>
+<!-- &#x2B50;
+&sstarf;
+&bigstar;
+&s -->
