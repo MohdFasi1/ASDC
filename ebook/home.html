@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/index.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <!-- first banner -->
+
+    <section class="container bg-prime">
+
+        <div class="wrapper">
+            <div class="icon">
+                <a href="" class="logo">
+                    <img src="assets/Logo.svg" alt="" class="logo-img">
+                </a>
+                <h2>E BookStore</h2>
+            </div>
+            <div class="nav">
+                <ul class="links" id="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                <div class="cart">
+                    <a href="#">
+                        <img src="assets/Vector.png" alt="" class="cart-logo">
+                    </a>
+                    <p class="cart-item-count">1</p>
+                </div>
+                <button class="nav-order">Order Today</button>
+                <img src="assets/menu-3-fill.png" alt="" class="ham" onclick="menu()">
+            </div>
+        </div>
+        <ul class="links2" id="links2">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+
+        <!-- -----------header ends here----------- -->
+
+        <div class="hero">
+            <div class="content">
+                <h1 class="c-h1">Books are uniquely <br> portable magic</h1>
+                <p class="c-para">There are many variations of passages of Lorem Ipsum available, but the majority have
+                    suffered alteration in some form.</p>
+                <div class="shortcuts">
+                    <button class="order-btn">Order Today</button>
+                    <a href="#" class="rfd">Read Free Demo</a>
+                </div>
+            </div>
+            <div class="book">
+                <a href="#">
+                    <img class="book-img" src="assets/Book.svg" alt="">
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- -------------About Author section----------------------- -->
+
+    <section class="bg-sec about-section">
+        <div class="about-wrapper">
+            <div class="wrapper-img">
+                <div class="wrap-img">
+                    <img src="assets/author1.svg" alt="" class="ab-img">
+                </div>
+            </div>
+            <div class="ab-content">
+                <div class="ab-co1">
+                    <h2 class="ab-h2">About Author</h2>
+                    <div class="sep"></div>
+                    <p class="ab-p">All the Lorem Ipsum generators on the Internet tend to repeated predefined chunks as
+                        necessary, making this the first true value generator on the Internet. It uses a dictionary of
+                        over 200 Latin words, combined with a handful</p>
+                </div>
+                <div class="ab-co2">
+                    <div>
+                        <h2>02</h2>
+                        <p>Books Published</p>
+                    </div>
+                    <div class="sep-vert"></div>
+                    <div>
+                        <h2>4.5</h2>
+                        <p>User Reviews</p>
+                    </div>
+                    <div class="sep-vert"></div>
+                    <div>
+                        <h2>04</h2>
+                        <p>Best Seller Awards</p>
+                    </div>
+                </div>
+                <div class="about-details">
+                    <div class="bc-wrap">
+                        <img src="assets/barcode1.svg" alt="">
+                    </div>
+                    <div class="ab-details-content">
+                        <h2>John Abraham,Ph.d</h2>
+                        <p>Mail: <a href="mailto: johnabraham@gmail.com"> johnabraham@gmail.com</a></p>
+                        <p>Phone: <a href="phone:(+2) 1235459000">(+2) 123 545 9000</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        let clicks = 1;
+        function menu() {
+            if (clicks == 1) {
+                document.getElementById("links2").style.display = "flex";
+                clicks++;
+            }
+            else {
+                document.getElementById("links2").style.display = "none";
+                clicks--;
+            }
+        }
+    </script>
+</body>
+
+</html>

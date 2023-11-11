@@ -1,0 +1,12 @@
+.container{
+    width: 800px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(8,auto);
+    grid-template-rows: repeat(8,auto);
+    border: 2px double black;
+    margin: auto;
+}
+.black{
+    background-color: black;
+}
