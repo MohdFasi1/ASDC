@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .product{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+            height: 300px;
+        }
+        .first{
+            padding: 25px;
+            overflow: hidden;
+        }
+        .first img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .second h1{
+            font-size: 18px;
+        }
+        .second p{
+            display: inline;
+            padding: 2px;
+            background-color: green;
+            border-radius: 3px;
+            color: white;
+        }
+        .second p i{
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="search-bar">
+    <button onclick="search()">search</button>
+    <div class="container">
+        <div class="product">
+            <div class="first">
+                
+            </div>
+            <div class="second">
+                <h1>${e.brand.toUpperCase()} ${e.title}</h1>
+                <p>${Math.round(e.rating*10)/10} <i class="fa fa-star" aria-hidden="true"></i></p>
+                <h3>${e.description}</h3>
+            </div>
+            <div class="third">
+                <h1>${e.price}</h1>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
